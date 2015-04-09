@@ -1,0 +1,50 @@
+[
+  {
+    "classroom_id": 1,
+    "name": "Algebra",
+    "teacher": "Beth Cox",
+    "school_id": 1
+  },
+  {
+    "classroom_id": 2,
+    "name": "English Literature",
+    "teacher": "Sam Williams",
+    "school_id": 1
+  },
+  {
+    "classroom_id": 3,
+    "name": "Mrs. Smith's 1st Grade",
+    "teacher": "Amanda Smith",
+    "school_id": 2
+  },
+  {
+    "classroom_id": 4,
+    "name": "Mr. Johnson's 4th Grade",
+    "teacher": "Mike Johnson",
+    "school_id": 2
+  },
+  {
+    "classroom_id": 5,
+    "name": "Ms. Tanner's Kindergarten",
+    "teacher": "Eliza Tanner",
+    "school_id": 2
+  },
+  {
+    "classroom_id": 6,
+    "name": "Ms. Baker's 2nd Grade",
+    "teacher": "Linda Baker",
+    "school_id": 4
+  },
+  {
+    "classroom_id": 7,
+    "name": "Mr. Henderson's 3rd Grade",
+    "teacher": "Brian Henderson",
+    "school_id": 4
+  },
+  {
+    "classroom_id": 8,
+    "name": "Mrs. Carey's 3rd Grade",
+    "teacher": "Michelle Carey",
+    "school_id": 4
+  }
+]
