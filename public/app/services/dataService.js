@@ -34,7 +34,14 @@
         }
 
         function getAllActivities() {
-
+            return $http.get('api/activities')
+                .then(function(response) {
+                    return response.data;
+                })
+                .catch(function(response) {
+                    $log.error('Error retrieving activities: ' + response.statusText);
+                    return $q.reject('Error retrieving activities.');
+                })
         }
 
     }

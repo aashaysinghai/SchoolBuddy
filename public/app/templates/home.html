@@ -1,17 +1,9 @@
 <div>
 
-    <h3>{{ home.message }}</h3>
+    <h1>{{ home.message }}</h1>
 
-    <h3>All Schools</h3>
-
-    <ul>
-        <li ng-repeat="school in home.allSchools">{{ school.name }}</li>
-    </ul>
-
-    <h3>All Classrooms</h3>
-
-    <ul>
-        <li ng-repeat="classroom in home.allClassrooms">{{ classroom.name }}</li>
-    </ul>
+    <h3>Number of schools listed:  {{ home.schoolCount }}</h3>
+    <h3>Number of classrooms listed:  {{ home.classroomCount }}</h3>
+    <h3>Number of activities listed:  {{ home.activityCount }}</h3>
 
 </div>
