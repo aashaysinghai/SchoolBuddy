@@ -12,18 +12,25 @@
         };
 
         function getAllSchools() {
-            return $http.get('api/schools1')
+            return $http.get('api/schools')
                 .then(function(response) {
                     return response.data;
                 })
                 .catch(function(response) {
                     $log.error('Error retrieving schools: ' + response.statusText);
-                    return $q.reject('An error occurred retrieving schools.');
+                    return $q.reject('Error retrieving schools.');
                 })
         }
 
         function getAllClassrooms() {
-
+            return $http.get('api/classrooms')
+                .then(function(response) {
+                    return response.data;
+                })
+                .catch(function(response) {
+                    $log.error('Error retrieving classrooms: ' + response.statusText);
+                    return $q.reject('Error retrieving classrooms.');
+                })
         }
 
         function getAllActivities() {

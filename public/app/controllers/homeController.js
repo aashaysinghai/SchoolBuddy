@@ -1,9 +1,9 @@
 (function () {
 
     angular.module('app')
-        .controller('HomeController', ['dataService', '$log', HomeController]);
+        .controller('HomeController', ['dataService', 'notifier', HomeController]);
 
-    function HomeController(dataService, $log) {
+    function HomeController(dataService, notifier) {
 
         var vm = this;
 
@@ -13,10 +13,17 @@
             .then(function(schools) {
                 vm.allSchools = schools;
             })
-            .catch(function(reason) {
-                // do some ui notification here
-                //$log.error(reason);
+            .catch(showError);
+
+        dataService.getAllClassrooms()
+            .then(function(classrooms) {
+                vm.allClassrooms = classrooms;
             })
+            .catch(showError);
+
+        function showError(message) {
+            notifier.error(message);
+        }
 
     }
 
