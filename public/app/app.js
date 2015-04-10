@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('app', ['ngRoute', 'ngCookies', 'ngResource', 'ui.router']);
+    var app = angular.module('app', ['ngRoute']);
 
     app.config(['$routeProvider', '$logProvider', function ($routeProvider, $logProvider) {
 
@@ -9,7 +9,7 @@
         $routeProvider
             .when('/', {
                 templateUrl: '/app/templates/home.html',
-                controller: 'homeController',
+                controller: 'HomeController',
                 controllerAs: 'home'
             })
             //.when('/AddBook', {

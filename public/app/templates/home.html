@@ -1,8 +1,11 @@
 <div>
-    This is the home page.
 
-    <div>
-        {{ home.message }}
-    </div>
+    <h3>{{ home.message }}</h3>
+
+    <h3>All Schools</h3>
+
+    <ul>
+        <li ng-repeat="school in home.allSchools">{{ school.name }}</li>
+    </ul>
 
 </div>

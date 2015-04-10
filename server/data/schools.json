@@ -1,32 +1,32 @@
 [
   {
     "school_id": 1,
-    "title": "Montgomery Grove Jr. High",
+    "name": "Montgomery Grove Jr. High",
     "principal": "Michelle Thorne"
   },
   {
     "school_id": 2,
-    "title": "Edgewood Elementary School",
+    "name": "Edgewood Elementary School",
     "principal": "Audrey Hills"
   },
   {
     "school_id": 3,
-    "title": "South High School",
+    "name": "South High School",
     "principal": "Scott Johnson"
   },
   {
     "school_id": 4,
-    "title": "Meadowview Elementary School",
+    "name": "Meadowview Elementary School",
     "principal": "Jeffrey Bender"
   },
   {
     "school_id": 5,
-    "title": "Coulter Ridge Middle School",
+    "name": "Coulter Ridge Middle School",
     "principal": "Leigh Williams"
   },
   {
     "school_id": 6,
-    "title": "Hilltop Elementary",
+    "name": "Hilltop Elementary",
     "principal": "Daniel Lanier"
   }
 ]
