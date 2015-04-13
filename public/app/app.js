@@ -12,11 +12,11 @@
                 controller: 'HomeController',
                 controllerAs: 'home'
             })
-            //.when('/AddBook', {
-            //    templateUrl: '/app/templates/addBook.html',
-            //    controller: 'AddBookController',
-            //    controllerAs: 'bookAdder'
-            //})
+            .when('/schools', {
+                templateUrl: '/app/templates/schools.html',
+                controller: 'SchoolsController',
+                controllerAs: 'schools'
+            })
             //.when('/EditBook/:bookID', {
             //    templateUrl: '/app/templates/editBook.html',
             //    controller: 'EditBookController',
