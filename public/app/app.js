@@ -13,7 +13,7 @@
                 controllerAs: 'home'
             })
             .when('/schools', {
-                templateUrl: '/app/templates/schools.html',
+                templateUrl: '/app/templates/allSchools.html',
                 controller: 'SchoolsController',
                 controllerAs: 'schools'
             })
