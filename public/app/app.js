@@ -22,6 +22,11 @@
                 controller: 'AllClassroomsController',
                 controllerAs: 'classrooms'
             })
+            .when('/activities', {
+                templateUrl: '/app/templates/allActivities.html',
+                controller: 'AllActivitiesController',
+                controllerAs: 'activities'
+            })
             .otherwise('/');
 
     }]);

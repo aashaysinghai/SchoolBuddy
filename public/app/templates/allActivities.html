@@ -1,0 +1,21 @@
+<h1 class="col-md-offset-1 col-lg-offset-1">All Activities</h1>
+<div class="col-md-8 col-lg-8 col-md-offset-1 col-lg-offset-1">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Registered Activities</div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Activity Name</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tr ng-repeat="activity in activities.allActivities">
+                <td>{{ activity.name }}</td>
+                <td>{{ activity.date }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
