@@ -14,14 +14,14 @@
             })
             .when('/schools', {
                 templateUrl: '/app/templates/allSchools.html',
-                controller: 'SchoolsController',
+                controller: 'AllSchoolsController',
                 controllerAs: 'schools'
             })
-            //.when('/EditBook/:bookID', {
-            //    templateUrl: '/app/templates/editBook.html',
-            //    controller: 'EditBookController',
-            //    controllerAs: 'bookEditor'
-            //})
+            .when('/classrooms', {
+                templateUrl: '/app/templates/allClassrooms.html',
+                controller: 'AllClassroomsController',
+                controllerAs: 'classrooms'
+            })
             .otherwise('/');
 
     }]);

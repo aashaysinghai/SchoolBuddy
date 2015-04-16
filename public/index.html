@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="app/css/bootstrap.flatly.min.css">
+    <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css">
     <link rel="stylesheet" href="app/bower_components/toastr/toastr.min.css">
     <title>School Buddy</title>
 </head>
@@ -18,14 +18,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">School Buddy</a>
+            <a class="navbar-brand" href="#/">School Buddy</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Schools<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Parents</a></li>
+                <li><a href="#/schools">Schools<span class="sr-only">(current)</span></a></li>
+                <li><a href="#/classrooms">Classrooms</a></li>
                 <li><a href="#">Activities</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -44,9 +44,11 @@
 
 <!-- Application code -->
 <script src="app/app.js"></script>
-<script src="app/controllers/HomeController.js"></script>
 <script src="app/services/dataService.js"></script>
 <script src="app/services/notifier.js"></script>
+<script src="app/controllers/HomeController.js"></script>
+<script src="app/controllers/AllSchoolsController.js"></script>
+<script src="app/controllers/AllClassroomsController.js"></script>
 
 </body>
 </html>
