@@ -1,48 +1,48 @@
 [
   {
-    "classroom_id": 1,
+    "id": 1,
     "name": "Mrs. Cox's 2nd Grade",
     "teacher": "Beth Cox",
     "school_id": 1
   },
   {
-    "classroom_id": 2,
-    "name": "Mr. Elliott's Kindergarten'",
+    "id": 2,
+    "name": "Mr. Elliott's Kindergarten",
     "teacher": "Sam Elliott",
     "school_id": 1
   },
   {
-    "classroom_id": 3,
+    "id": 3,
     "name": "Mrs. Smith's 1st Grade",
     "teacher": "Amanda Smith",
     "school_id": 2
   },
   {
-    "classroom_id": 4,
+    "id": 4,
     "name": "Mr. Johnson's 4th Grade",
     "teacher": "Mike Johnson",
     "school_id": 2
   },
   {
-    "classroom_id": 5,
+    "id": 5,
     "name": "Ms. Tanner's Kindergarten",
     "teacher": "Eliza Tanner",
     "school_id": 2
   },
   {
-    "classroom_id": 6,
+    "id": 6,
     "name": "Ms. Baker's 2nd Grade",
     "teacher": "Linda Baker",
     "school_id": 4
   },
   {
-    "classroom_id": 7,
+    "id": 7,
     "name": "Mr. Henderson's 3rd Grade",
     "teacher": "Brian Henderson",
     "school_id": 4
   },
   {
-    "classroom_id": 8,
+    "id": 8,
     "name": "Mrs. Carey's 3rd Grade",
     "teacher": "Michelle Carey",
     "school_id": 4

@@ -8,6 +8,15 @@ var router = express.Router();
 router.route('/')
     .get(function(req, res) {
         var data = helper.readData(datafile);
+
+        var schoolsDataFile = 'server/data/schools.json';
+        var schoolsData = helper.readData(schoolsDataFile);
+
+        // attach schools to the classrooms
+        data.forEach(function(classroom, index, array) {
+            classroom.school = helper.getItemsById(schoolsData, classroom.school_id)[0];
+        });
+
         res.send(data);
     });
 

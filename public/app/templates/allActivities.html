@@ -9,11 +9,13 @@
             <thead>
             <tr>
                 <th>Activity Name</th>
+                <th>Classroom</th>
                 <th>Date</th>
             </tr>
             </thead>
             <tr ng-repeat="activity in activities.allActivities">
                 <td>{{ activity.name }}</td>
+                <td>{{ activity.classroom.name }}</td>
                 <td>{{ activity.date }}</td>
             </tr>
         </table>

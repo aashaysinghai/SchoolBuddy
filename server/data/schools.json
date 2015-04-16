@@ -1,31 +1,31 @@
 [
   {
-    "school_id": 1,
+    "id": 1,
     "name": "Fort Craig Elementary",
     "principal": "Michelle Thorne"
   },
   {
-    "school_id": 2,
+    "id": 2,
     "name": "Edgewood Elementary",
     "principal": "Audrey Hills"
   },
   {
-    "school_id": 3,
+    "id": 3,
     "name": "Clarke Elementary",
     "principal": "Scott Johnson"
   },
   {
-    "school_id": 4,
+    "id": 4,
     "name": "Meadowview Elementary",
     "principal": "Jeffrey Bender"
   },
   {
-    "school_id": 5,
+    "id": 5,
     "name": "Coulter Ridge Elementary",
     "principal": "Leigh Williams"
   },
   {
-    "school_id": 6,
+    "id": 6,
     "name": "Hilltop Elementary",
     "principal": "Daniel Lanier"
   }
