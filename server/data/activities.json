@@ -3,70 +3,70 @@
     "activity_id": 1,
     "name": "Museum Field Trip",
     "date": "10/1/2015",
+    "classroom_id": 1,
+    "school_id": 1
+  },
+  {
+    "activity_id": 2,
+    "name": "Book Fair",
+    "date": "10/6/2015",
+    "classroom_id": 2,
+    "school_id": 1
+  },
+  {
+    "activity_id": 3,
+    "name": "Petting Zoo Visit",
+    "date": "10/19/2015",
     "classroom_id": 3,
     "school_id": 2
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
+    "activity_id": 4,
+    "name": "Pottery Class",
+    "date": "11/4/2015",
+    "classroom_id": 4,
     "school_id": 2
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
+    "activity_id": 5,
+    "name": "Finger Painting Fun",
+    "date": "11/16/2015",
+    "classroom_id": 5,
     "school_id": 2
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
+    "activity_id": 6,
+    "name": "Visiting Author",
+    "date": "11/18/2015",
+    "classroom_id": 6,
+    "school_id": 4
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
+    "activity_id": 7,
+    "name": "Picnic Lunch",
+    "date": "11/23/2015",
+    "classroom_id": 7,
+    "school_id": 4
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
+    "activity_id": 8,
+    "name": "Lunch with Grandparents",
+    "date": "12/1/2015",
+    "classroom_id": 8,
+    "school_id": 4
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
+    "activity_id": 9,
+    "name": "Visit City Theater",
+    "date": "12/8/2015",
+    "classroom_id": 1,
+    "school_id": 1
   },
   {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
-  },
-  {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
-  },
-  {
-    "activity_id": 1,
-    "name": "Museum Field Trip",
-    "date": "10/1/2015",
-    "classroom_id": 3,
-    "school_id": 2
+    "activity_id": 10,
+    "name": "Create an Art Exhibit",
+    "date": "12/10/2015",
+    "classroom_id": 1,
+    "school_id": 1
   }
 ]

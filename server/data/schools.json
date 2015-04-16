@@ -1,27 +1,27 @@
 [
   {
     "school_id": 1,
-    "name": "Montgomery Grove Jr. High",
+    "name": "Fort Craig Elementary",
     "principal": "Michelle Thorne"
   },
   {
     "school_id": 2,
-    "name": "Edgewood Elementary School",
+    "name": "Edgewood Elementary",
     "principal": "Audrey Hills"
   },
   {
     "school_id": 3,
-    "name": "South High School",
+    "name": "Clarke Elementary",
     "principal": "Scott Johnson"
   },
   {
     "school_id": 4,
-    "name": "Meadowview Elementary School",
+    "name": "Meadowview Elementary",
     "principal": "Jeffrey Bender"
   },
   {
     "school_id": 5,
-    "name": "Coulter Ridge Middle School",
+    "name": "Coulter Ridge Elementary",
     "principal": "Leigh Williams"
   },
   {

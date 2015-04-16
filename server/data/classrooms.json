@@ -1,14 +1,14 @@
 [
   {
     "classroom_id": 1,
-    "name": "Algebra",
+    "name": "Mrs. Cox's 2nd Grade",
     "teacher": "Beth Cox",
     "school_id": 1
   },
   {
     "classroom_id": 2,
-    "name": "English Literature",
-    "teacher": "Sam Williams",
+    "name": "Mr. Elliott's Kindergarten'",
+    "teacher": "Sam Elliott",
     "school_id": 1
   },
   {
