@@ -27,6 +27,16 @@
                 controller: 'AllActivitiesController',
                 controllerAs: 'activities'
             })
+            .when('/classrooms/:id', {
+                templateUrl: '/app/templates/classroom.html',
+                controller: 'ClassroomController',
+                controllerAs: 'classroom'
+            })
+            .when('/classrooms/:id/detail/:month?', {
+                templateUrl: '/app/templates/classroomDetail.html',
+                controller: 'ClassroomController',
+                controllerAs: 'classroom'
+            })
             .otherwise('/');
 
     }]);

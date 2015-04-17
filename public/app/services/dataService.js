@@ -8,7 +8,8 @@
         return {
             getAllSchools: getAllSchools,
             getAllClassrooms: getAllClassrooms,
-            getAllActivities: getAllActivities
+            getAllActivities: getAllActivities,
+            getClassroom: getClassroom
         };
 
         function getAllSchools() {
@@ -30,6 +31,17 @@
                 .catch(function(response) {
                     $log.error('Error retrieving classrooms: ' + response.statusText);
                     return $q.reject('Error retrieving classrooms.');
+                })
+        }
+
+        function getClassroom(id) {
+            return $http.get('api/classrooms/' + id)
+                .then(function(response) {
+                    return response.data;
+                })
+                .catch(function(response) {
+                    $log.error('Error retrieving classroom (' + id + '): ' + response.statusText);
+                    return $q.reject('Error retrieving classroom.');
                 })
         }
 

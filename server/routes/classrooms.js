@@ -1,6 +1,8 @@
 var express = require('express');
 var helper = require('../helpers');
 var datafile = 'server/data/classrooms.json';
+var schoolsDataFile = 'server/data/schools.json';
+var activitiesDataFile = 'server/data/activities.json';
 var router = express.Router();
 
 /* GET all classrooms */
@@ -9,7 +11,6 @@ router.route('/')
     .get(function(req, res) {
         var data = helper.readData(datafile);
 
-        var schoolsDataFile = 'server/data/schools.json';
         var schoolsData = helper.readData(schoolsDataFile);
 
         // attach schools to the classrooms
@@ -26,15 +27,25 @@ router.route('/:id')
     .get(function(req, res) {
 
         var data = helper.readData(datafile);
+        var schoolsData = helper.readData(schoolsDataFile);
+        var activitiesData = helper.readData(activitiesDataFile);
 
         var matchingClassrooms = data.filter(function(item) {
-            return item.school_id == req.params.id;
+            return item.id == req.params.id;
         });
 
         if(matchingClassrooms.length === 0) {
             res.sendStatus(404);
         } else {
-            res.send(matchingClassrooms[0]);
+            var classMatch = matchingClassrooms[0];
+
+            classMatch.school = helper.getItemsById(schoolsData, classMatch.school_id)[0];
+
+            classMatch.activities = activitiesData.filter(function(item) {
+                return item.classroom_id == req.params.id;
+            });
+
+            res.send(classMatch);
         }
     });
 
