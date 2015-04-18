@@ -11,6 +11,18 @@
             .then(function(classroom) {
                 vm.month = $routeParams.month;
                 vm.currentClassroom = classroom;
+
+                if($routeParams.month) {
+                    if(classroom.activities.length > 0) {
+                        vm.timePeriod = dataService.getMonthName($routeParams.month);
+                    }
+                    else {
+                        vm.timePeriod = 'No activities this month';
+                    }
+                }
+                else {
+                    vm.timePeriod = 'All activities';
+                }
             })
             .catch(showError);
 

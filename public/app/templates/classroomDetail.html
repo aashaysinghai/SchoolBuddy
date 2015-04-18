@@ -6,7 +6,7 @@
     <div>
         <div class="panel panel-default">
             <!-- Default panel contents -->
-            <div class="panel-heading">Registered Activities</div>
+            <div class="panel-heading">Registered Activities - {{ classroom.timePeriod }}</div>
 
             <!-- Table -->
             <table class="table">
@@ -16,12 +16,13 @@
                     <th>Date</th>
                 </tr>
                 </thead>
-                <tr ng-repeat="activity in classroom.currentClassroom.activities">
+                <tr ng-repeat="activity in filteredActivities = (classroom.currentClassroom.activities | activityMonthFilter:classroom.month)">
                     <td>{{ activity.name }}</td>
-                    <td>{{ activity.date }}</td>
+                    <td>{{ activity.date | date:'fullDate' }}</td>
                 </tr>
             </table>
         </div>
+        <div ng-if="filteredActivities.length == 0">No activities</div>
     </div>
 
 </div>

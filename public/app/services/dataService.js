@@ -9,7 +9,8 @@
             getAllSchools: getAllSchools,
             getAllClassrooms: getAllClassrooms,
             getAllActivities: getAllActivities,
-            getClassroom: getClassroom
+            getClassroom: getClassroom,
+            getMonthName: getMonthName
         };
 
         function getAllSchools() {
@@ -54,6 +55,15 @@
                     $log.error('Error retrieving activities: ' + response.statusText);
                     return $q.reject('Error retrieving activities.');
                 })
+        }
+
+        function getMonthName(month) {
+
+            var monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            return monthNames[month - 1];
         }
 
     }
