@@ -25,7 +25,12 @@
             .when('/activities', {
                 templateUrl: '/app/templates/allActivities.html',
                 controller: 'AllActivitiesController',
-                controllerAs: 'activities'
+                controllerAs: 'activities',
+                resolve: {
+                    classrooms: function(dataService) {
+                        return dataService.getAllClassrooms();
+                    }
+                }
             })
             .when('/classrooms/:id', {
                 templateUrl: '/app/templates/classroom.html',
