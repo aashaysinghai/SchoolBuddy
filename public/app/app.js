@@ -8,41 +8,36 @@
 
         $routeProvider
             .when('/', {
-                templateUrl: '/app/templates/home.html',
                 controller: 'HomeController',
-                controllerAs: 'home'
+                controllerAs: 'home',
+                templateUrl: '/app/templates/home.html'
             })
             .when('/schools', {
-                templateUrl: '/app/templates/allSchools.html',
                 controller: 'AllSchoolsController',
-                controllerAs: 'schools'
+                controllerAs: 'schools',
+                templateUrl: '/app/templates/allSchools.html'
             })
             .when('/classrooms', {
-                templateUrl: '/app/templates/allClassrooms.html',
                 controller: 'AllClassroomsController',
-                controllerAs: 'classrooms'
+                controllerAs: 'classrooms',
+                templateUrl: '/app/templates/allClassrooms.html'
             })
             .when('/activities', {
-                templateUrl: '/app/templates/allActivities.html',
                 controller: 'AllActivitiesController',
                 controllerAs: 'activities',
-                resolve: {
-                    classrooms: function(dataService) {
-                        return dataService.getAllClassrooms();
-                    }
-                }
-            })
-            .when('/classrooms/:id', {
-                templateUrl: '/app/templates/classroom.html',
-                controller: 'ClassroomController',
-                controllerAs: 'classroom'
-            })
-            .when('/classrooms/:id/detail/:month?', {
-                templateUrl: '/app/templates/classroomDetail.html',
-                controller: 'ClassroomController',
-                controllerAs: 'classroom'
-            })
-            .otherwise('/');
+                templateUrl: '/app/templates/allActivities.html'
+            });
+        //.when('/classrooms/:id', {
+            //    templateUrl: '/app/templates/classroom.html',
+            //    controller: 'ClassroomController',
+            //    controllerAs: 'classroom'
+            //})
+            //.when('/classrooms/:id/detail/:month?', {
+            //    templateUrl: '/app/templates/classroomDetail.html',
+            //    controller: 'ClassroomController',
+            //    controllerAs: 'classroom'
+            //})
+            //.otherwise('/');
 
     }]);
 
