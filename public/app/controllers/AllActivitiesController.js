@@ -1,11 +1,31 @@
 (function () {
 
     angular.module('app')
-        .controller('AllActivitiesController', ['dataService', 'notifier', 'classrooms', '$location', AllActivitiesController]);
+        .controller('AllActivitiesController', ['dataService', 'notifier', '$location', AllActivitiesController]);
 
-    function AllActivitiesController(dataService, notifier, classrooms, $location) {
+    function AllActivitiesController(dataService, notifier, $location) {
 
         var vm = this;
+
+        // temp variable until classrooms are injected as part of the route
+        var classrooms = [
+            {
+                "id": 1,
+                "name": "Mrs. Cox's 2nd Grade"
+            },
+            {
+                "id": 2,
+                "name": "Mr. Elliott's Kindergarten"
+            },
+            {
+                "id": 3,
+                "name": "Mrs. Smith's 1st Grade"
+            },
+            {
+                "id": 4,
+                "name": "Mr. Johnson's 4th Grade"
+            }
+        ];
 
         vm.selectedMonth = 1; // default to January
         vm.allClassrooms = classrooms;
