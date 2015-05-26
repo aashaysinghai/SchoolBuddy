@@ -1,9 +1,9 @@
 (function () {
 
     angular.module('app')
-        .controller('AllActivitiesController', ['dataService', 'notifier', '$location', AllActivitiesController]);
+        .controller('AllActivitiesController', ['dataService', 'notifier', AllActivitiesController]);
 
-    function AllActivitiesController(dataService, notifier, $location) {
+    function AllActivitiesController(dataService, notifier) {
 
         var vm = this;
 
@@ -36,11 +36,6 @@
                 vm.allActivities = activities;
             })
             .catch(showError);
-
-        vm.search = function() {
-            var classroom_detail_url = '/classrooms/' + vm.selectedClassroom.id + '/detail/' + vm.selectedMonth;
-            $location.url(classroom_detail_url);
-        };
 
         function showError(message) {
             notifier.error(message);
