@@ -25,13 +25,31 @@
                 url: '/classrooms',
                 controller: 'AllClassroomsController',
                 controllerAs: 'classrooms',
-                templateUrl: '/app/templates/allClassrooms.html'
+                templateUrl: '/app/templates/allClassrooms.html',
+                onEnter: function ($log) {
+                    $log.debug('Entering the classrooms state.');
+                },
+                onExit: function ($log) {
+                    $log.debug('Exiting the classrooms state.');
+                }
             })
             .state('activities', {
                 url: '/activities',
                 controller: 'AllActivitiesController',
                 controllerAs: 'activities',
-                templateUrl: '/app/templates/allActivities.html'
+                templateUrl: '/app/templates/allActivities.html',
+                resolve: {
+                    activities: function (dataService) {
+                        return dataService.getAllActivities();
+                    }
+                },
+                data: {
+                    name: 'My Activity',
+                    desc: 'Fun!'
+                },
+                foo: {
+                    myFoo: 'bar'
+                }
             })
             .state('classroom_summary', {
                 url: '/classrooms/:id',

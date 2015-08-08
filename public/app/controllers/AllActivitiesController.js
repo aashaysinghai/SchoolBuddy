@@ -1,13 +1,18 @@
 (function () {
 
     angular.module('app')
-        .controller('AllActivitiesController', ['dataService', 'notifier', '$state', AllActivitiesController]);
+        .controller('AllActivitiesController', ['dataService', 'notifier', '$state', 'activities', '$log', AllActivitiesController]);
 
-    function AllActivitiesController(dataService, notifier, $state) {
+    function AllActivitiesController(dataService, notifier, $state, activities, $log) {
 
         var vm = this;
 
         vm.selectedMonth = 1; // default to January
+
+        vm.allActivities = activities;
+
+        $log.debug($state.current.data);
+        $log.debug($state.current.foo);
 
         vm.search = function () {
             $state.go('classroom_detail', {id: vm.selectedClassroom.id, month: vm.selectedMonth});
@@ -21,11 +26,11 @@
             })
             .catch(showError);
 
-        dataService.getAllActivities()
-            .then(function(activities) {
-                vm.allActivities = activities;
-            })
-            .catch(showError);
+        //dataService.getAllActivities()
+        //    .then(function(activities) {
+        //        vm.allActivities = activities;
+        //    })
+        //    .catch(showError);
 
         function showError(message) {
             notifier.error(message);
